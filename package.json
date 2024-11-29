@@ -1,0 +1,50 @@
+{
+  "name": "@verdaccio/logging",
+  "version": "1.0.0",
+  "description": "Logging library for Verdaccio packages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Shuklin Maksim",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MakShuk/package-log-tools"
+  },
+  "keywords": [
+    "verdaccio",
+    "logging"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0",
+    "rimraf": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
