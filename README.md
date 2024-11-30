@@ -73,17 +73,17 @@ logger.group('Операции с базой данных', () => {
 ### Вывод таблиц
 
 ```typescript
-  this.logger.table(
-    'Дополнительная информация',
-    [
-      { id: 1, name: 'John', age: 30 },
-      { id: 2, name: 'Jane', age: 25 },
-    ],
-    {
-      title: 'Список пользователей',
-      columns: ['name', 'age'],
-    },
-  );
+this.logger.table(
+  'Дополнительная информация',
+  [
+    { id: 1, name: 'John', age: 30 },
+    { id: 2, name: 'Jane', age: 25 },
+  ],
+  {
+    title: 'Список пользователей',
+    columns: ['name', 'age'],
+  },
+);
 ```
 
 ### Использование как глобального логгера
