@@ -1,7 +1,7 @@
 {
-  "name": "@verdaccio/logging",
+  "name": "log-tools",
   "version": "1.0.0",
-  "description": "Logging library for Verdaccio packages",
+  "description": "Logging library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Shuklin Maksim",
@@ -10,8 +10,10 @@
     "type": "git",
     "url": "https://github.com/MakShuk/package-log-tools"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
-    "verdaccio",
     "logging"
   ],
   "files": [
@@ -45,8 +47,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
